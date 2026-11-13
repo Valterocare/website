@@ -70,6 +70,8 @@ nav.links a:hover{color:var(--navy)}
 .btn.primary{background:var(--navy);color:var(--navy-ink)}
 .btn.ghost{color:var(--navy);background:transparent}
 .facts{display:flex;flex-wrap:wrap;gap:8px 18px;color:var(--muted);font-size:.92rem}
+.services{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 22px}
+.services span{font-size:.86rem;padding:5px 12px;border-radius:999px;border:1px solid var(--line);background:var(--surface)}
 .facts span::before{content:"";display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--aqua);margin-right:8px;vertical-align:1px}
 @media (max-width:820px){.hero .wrap{grid-template-columns:1fr}.hero{padding-block:40px}}
 
@@ -166,7 +168,7 @@ footer .wrap{padding-block:24px;display:flex;flex-wrap:wrap;justify-content:spac
       <div class="hero-copy">
         <div class="eyebrow"><span lang="en">For Florida APD and iBudget providers</span><span lang="es">Para proveedores de APD e iBudget en Florida</span></div>
         <h1><span lang="en">Never pay for hours you haven’t billed.</span><span lang="es">Nunca pagues horas que no has cobrado.</span></h1>
-        <p class="lead"><span lang="en">Service notes, signatures, reviews, authorizations, MARs and staff files in one place, built by agency owners for agency owners.</span><span lang="es">Notas de servicio, firmas, revisiones, autorizaciones, MAR y expedientes del personal en un solo lugar, hecho por dueños de agencia para dueños de agencia.</span></p>
+        <p class="lead"><span lang="en">Notes, plans, summaries, MARs, authorizations, payroll and staff files for APD services, always ready for Qlarant and any inspection. Built by agency owners for agency owners.</span><span lang="es">Notas, planes, resúmenes, MAR, autorizaciones, nómina y expedientes para los servicios de APD, siempre listos para Qlarant y cualquier inspección. Hecho por dueños de agencia para dueños de agencia.</span></p>
         <div class="cta">
           <a class="btn primary" href="#contact"><span lang="en">Get notified</span><span lang="es">Quiero que me avisen</span></a>
           <a class="btn ghost" href="#features"><span lang="en">See what it does</span><span lang="es">Ver qué hace</span></a>
@@ -181,9 +183,9 @@ footer .wrap{padding-block:24px;display:flex;flex-wrap:wrap;justify-content:spac
         <div class="screen">
           <div class="top"><small lang="en">Today</small><small lang="es">Hoy</small><b lang="en">My Consumers</b><b lang="es">Mis Consumers</b></div>
           <div class="rows">
-            <div class="row"><div><b>Consumer A</b><small>Companion · 6:00–7:30 AM</small></div><span class="pill" lang="en">Signed</span><span class="pill" lang="es">Firmada</span></div>
-            <div class="row"><div><b>Consumer B</b><small>Personal Supports · 9:00–12:00</small></div><span class="pill" lang="en">In review</span><span class="pill" lang="es">En revisión</span></div>
-            <div class="row"><div><b>Consumer C</b><small>Respite · 2:00–5:00 PM</small></div><span class="pill" lang="en">New note</span><span class="pill" lang="es">Nueva nota</span></div>
+            <div class="row"><div><b>Group home A</b><small lang="en">Residential Habilitation · MAR 8:00 AM</small><small lang="es">Residential Habilitation · MAR 8:00 a.m.</small></div><span class="pill" lang="en">Given</span><span class="pill" lang="es">Dado</span></div>
+            <div class="row"><div><b>Consumer B</b><small>Behavior Analysis · 10:00–11:00</small></div><span class="pill" lang="en">In review</span><span class="pill" lang="es">En revisión</span></div>
+            <div class="row"><div><b>Consumer C</b><small>Companion · 2:00–5:00 PM</small></div><span class="pill" lang="en">New note</span><span class="pill" lang="es">Nueva nota</span></div>
           </div>
           <div class="alert"><span lang="en">80 authorized hours will go unused. Suggested: 28 h/week.</span><span lang="es">80 horas autorizadas se van a perder. Sugerencia: 28 h/semana.</span></div>
           <div class="example"><span lang="en">Example with fictitious data</span><span lang="es">Ejemplo con datos ficticios</span></div>
@@ -199,13 +201,14 @@ footer .wrap{padding-block:24px;display:flex;flex-wrap:wrap;justify-content:spac
         <h2><span lang="en">Everything your agency needs, in one place, without the hassle.</span><span lang="es">Todo lo que tu agencia necesita, en un solo lugar y sin complicaciones.</span></h2>
         <p><span lang="en">Every feature started as a problem we lived in our own agency.</span><span lang="es">Cada función nació de un problema que vivimos en nuestra propia agencia.</span></p>
       </div>
+      <div class="services" aria-label="Services covered"><span>Companion</span><span>Personal Supports</span><span>Respite</span><span>Residential Habilitation</span><span>Behavior Analysis</span><span>Behavior Assistant</span><span>Supported Living Coaching</span><span>Adult Day Training</span><span>Supported Employment</span><span>Transportation</span></div>
       <div class="grid">
+        <div class="feature"><h3><span lang="en">Ready for any inspection</span><span lang="es">Listo para cualquier inspección</span></h3><p><span lang="en">Before Qlarant arrives, see what is missing in each record, checked against the current review tools. The same for APD and Medicaid reviews.</span><span lang="es">Antes de que llegue Qlarant, ves qué falta en cada expediente, revisado con las herramientas de revisión vigentes. Lo mismo para las revisiones de APD y de Medicaid.</span></p></div>
         <div class="feature"><h3><span lang="en">Never pay without billing</span><span lang="es">Nunca pagues sin cobrar</span></h3><p><span lang="en">See unbilled hours before payroll. The owner signs off on every payroll close.</span><span lang="es">Ve las horas sin cobrar antes de la nómina. El dueño firma cada cierre de nómina.</span></p></div>
         <div class="feature"><h3><span lang="en">Never lose authorized hours</span><span lang="es">Nunca pierdas horas autorizadas</span></h3><p><span lang="en">Know weeks ahead when hours will go unused, and how many per week will use them, within official limits.</span><span lang="es">Sabe con semanas de anticipación cuándo sobrarán horas y cuántas por semana necesitas para usarlas, dentro de los límites oficiales.</span></p></div>
-        <div class="feature"><h3><span lang="en">Audit-ready service notes</span><span lang="es">Notas listas para auditoría</span></h3><p><span lang="en">Exact times, units, service code, Medicaid ID, staff and consumer signatures, and an independent review, in a clean PDF.</span><span lang="es">Horas exactas, unidades, código del servicio, Medicaid ID, firma del Staff y del Consumer, y revisión independiente, en un PDF limpio.</span></p></div>
-        <div class="feature"><h3><span lang="en">Activities that match the plan</span><span lang="es">Actividades de acuerdo al plan</span></h3><p><span lang="en">Staff only see activities that fit each consumer’s Support Plan and abilities.</span><span lang="es">El Staff solo ve las actividades que corresponden al Support Plan y a las capacidades de cada Consumer.</span></p></div>
+        <div class="feature"><h3><span lang="en">Audit-ready documentation</span><span lang="es">Documentación lista para auditoría</span></h3><p><span lang="en">Notes, plans, quarterly summaries and annual reports, as each service requires, with exact times, units, signatures and an independent review, in a clean PDF.</span><span lang="es">Notas, planes, resúmenes trimestrales e informes anuales, según lo que pida cada servicio, con horas exactas, unidades, firmas y revisión independiente, en un PDF limpio.</span></p></div>
         <div class="feature"><h3><span lang="en">Bilingual for your team</span><span lang="es">Bilingüe para tu equipo</span></h3><p><span lang="en">Your staff work in English or Spanish. Official notes and PDFs come out in English.</span><span lang="es">Tu equipo trabaja en español o en inglés. Las notas oficiales y los PDF salen en inglés.</span></p></div>
-        <div class="feature"><h3><span lang="en">Paper MAR, done right</span><span lang="es">El MAR en papel, bien hecho</span></h3><p><span lang="en">Print the official monthly MAR from your orders. If a prescription is missing something, you get the letter to the pharmacy ready.</span><span lang="es">Imprime el MAR oficial del mes desde tus órdenes. Si a una receta le falta algo, te prepara la carta para la farmacia.</span></p></div>
+        <div class="feature"><h3><span lang="en">Group homes in order</span><span lang="es">Group homes en orden</span></h3><p><span lang="en">The official monthly MAR from your orders, house meetings, the home’s vehicle, and a guide to open a new home.</span><span lang="es">El MAR oficial del mes desde tus órdenes, las reuniones del hogar, el vehículo del hogar y una guía para abrir un hogar nuevo.</span></p></div>
         <div class="feature"><h3><span lang="en">No expiration slips by</span><span lang="es">Ningún vencimiento se te pasa</span></h3><p><span lang="en">CPR, licenses, background checks and appointments: alerts before they expire.</span><span lang="es">CPR, licencias, background y citas: avisos antes de que venzan.</span></p></div>
         <div class="feature"><h3><span lang="en">You know who saw each record</span><span lang="es">Sabes quién vio cada expediente</span></h3><p><span lang="en">Every view, download and print of a consumer’s record is logged, and the log can’t be erased.</span><span lang="es">Cada vista, descarga e impresión del expediente de un Consumer queda registrada, y ese registro no se puede borrar.</span></p></div>
         <div class="feature"><span class="tag" lang="en">Coming soon</span><span class="tag" lang="es">Próximamente</span><h3><span lang="en">iPhone and Android apps</span><span lang="es">Apps para iPhone y Android</span></h3><p><span lang="en">Open with Face ID, scan documents with the camera, and keep working without signal.</span><span lang="es">Abre con Face ID, escanea documentos con la cámara y sigue trabajando sin señal.</span></p></div>
@@ -216,7 +219,7 @@ footer .wrap{padding-block:24px;display:flex;flex-wrap:wrap;justify-content:spac
   <section id="how" class="steps-band">
     <div class="wrap">
       <div class="head">
-        <div class="eyebrow"><span lang="en">How a note moves</span><span lang="es">Cómo avanza una nota</span></div>
+        <div class="eyebrow"><span lang="en">The Staff’s day</span><span lang="es">El día a día del Staff</span></div>
         <h2><span lang="en">Built for a note in under two minutes.</span><span lang="es">Pensado para que una nota tome menos de dos minutos.</span></h2>
       </div>
       <ol class="steps">
@@ -274,7 +277,7 @@ footer .wrap{padding-block:24px;display:flex;flex-wrap:wrap;justify-content:spac
 <footer>
   <div class="wrap">
     <span>© 2026 OV Technology LLC · Valtero Care · West Palm Beach, Florida</span>
-    <span><span lang="en">Valtero is not affiliated with or endorsed by the Florida Agency for Persons with Disabilities (APD) or AHCA.</span><span lang="es">Valtero no está afiliado ni respaldado por la Agency for Persons with Disabilities (APD) de Florida ni por AHCA.</span></span>
+    <span><span lang="en">Valtero is not affiliated with or endorsed by the Florida Agency for Persons with Disabilities (APD), AHCA or Qlarant.</span><span lang="es">Valtero no está afiliado ni respaldado por la Agency for Persons with Disabilities (APD) de Florida, AHCA ni Qlarant.</span></span>
   </div>
 </footer>
 
