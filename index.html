@@ -69,6 +69,9 @@ nav.links a:hover{color:var(--navy)}
 .btn{display:inline-flex;align-items:center;gap:8px;padding:13px 20px;border-radius:12px;font-weight:700;text-decoration:none;border:2px solid var(--navy)}
 .btn.primary{background:var(--navy);color:var(--navy-ink)}
 .btn.ghost{color:var(--navy);background:transparent}
+button.btn{font:inherit;font-weight:700;cursor:pointer}
+.soon-tag{font-size:.7rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;background:var(--soon-soft);color:var(--soon);border-radius:999px;padding:2px 8px}
+.trial-note{flex-basis:100%;margin:2px 0 0;color:var(--muted);font-size:.95rem}
 .facts{display:flex;flex-wrap:wrap;gap:8px 18px;color:var(--muted);font-size:.92rem}
 .feature.tap{cursor:pointer}
 .feature.tap:hover{border-color:var(--aqua)}
@@ -182,6 +185,8 @@ footer a{color:var(--muted)}
         <div class="cta">
           <a class="btn primary" href="#contact"><span lang="en">Get notified</span><span lang="es">Quiero que me avisen</span></a>
           <a class="btn ghost" href="#features"><span lang="en">See what it does</span><span lang="es">Ver qué hace</span></a>
+          <button type="button" class="btn ghost trial" id="trial-btn" aria-expanded="false" aria-controls="trial-note"><span lang="en">Try it free</span><span lang="es">Pruébala gratis</span><span class="soon-tag"><span lang="en">Soon</span><span lang="es">Pronto</span></span></button>
+          <p class="trial-note" id="trial-note" role="status" hidden><span lang="en">The free trial opens soon. <a href="#contact">Write to us</a> and we will send you the link as soon as it is ready.</span><span lang="es">La prueba gratis abre pronto. <a href="#contact">Escríbenos</a> y te mandamos el enlace en cuanto esté lista.</span></p>
         </div>
         <div class="facts">
           <span lang="en">English and Spanish</span><span lang="es">En español y en inglés</span>
@@ -312,6 +317,8 @@ footer a{color:var(--muted)}
     card.addEventListener('click',function(e){ if(e.target.closest('summary')) return; d.open=!d.open; });
     card.addEventListener('keydown',function(e){ if((e.key==='Enter'||e.key===' ')&&!e.target.closest('summary')){e.preventDefault(); d.open=!d.open;} });
   });
+  var tb=document.getElementById('trial-btn'),tn=document.getElementById('trial-note');
+  if(tb&&tn){tb.addEventListener('click',function(){var open=tn.hidden;tn.hidden=!open;tb.setAttribute('aria-expanded',String(open));});}
   var copy=document.getElementById('copy');
   copy.addEventListener('click',function(){
     var text='support@valterocare.com';
